@@ -1,22 +1,22 @@
 # Roadmap, decisions, and current state
 
-Updated: October 7, 2026
+Updated: October 8, 2026
 
 ## 1. Implementation inventory
 
-Verified against the repository before this documentation change:
+Verified on October 8, 2026:
 
 | Area | State |
 | --- | --- |
 | README | Previously title-only; expanded by this documentation change |
 | Ignore rules | Present; includes Next.js/Node-related patterns |
-| Application code | Absent |
-| Package manifest / lockfile | Absent |
+| Application code | Minimal Next.js App Router skeleton; product features absent |
+| Package manifest / lockfile | `package.json` pins Next.js 16.4.0 and React 19.3.0; lockfile records resolved dependencies |
 | Backend / data model | Not implemented |
 | Authentication / locality enforcement | Not implemented |
 | Map / listing / reservation / chat | Not implemented |
 | Review / QR / AI description | Not implemented |
-| Tests / CI | Not present |
+| Tests / CI | No test suite or CI; lint, type-check, and production build commands are configured |
 | Verified deployment | None established from this repository |
 
 Re-inspect current files before using this historical snapshot to make a development claim.
@@ -82,7 +82,7 @@ Exit evidence: inference has representative evaluations, manual fallback works, 
 | D08 | Single-item sales without an event | Changes the core domain model | Validate the use case |
 | D09 | Completion and review eligibility | Determines trustworthy history | Define evidence and disputes |
 | D10 | Reputation formula and appeals | Can materially affect participation | Defer scoring until policy and data exist |
-| D11 | Framework, storage, auth, map, hosting | Affects cost and maintenance | Record architecture decisions |
+| D11 | Framework selected; storage, auth, map, and hosting remain open | Affects cost and maintenance | Record the remaining architecture decisions before feature implementation |
 | D12 | Moderation, prohibited listings, retention | Needed for real-user operations | Prepare operating policies before launch |
 | D13 | AI provider, consent, retention, budget | Affects cost and data exposure | Evaluate only for the optional AI phase |
 | D14 | Monetization | Can distort early priorities | Validate usefulness before selecting a model |
@@ -105,6 +105,12 @@ These entries are unresolved. Recommendations are not approvals.
 | C08 | Include QR item information and optional photo assistance in the vision | Founder-provided future capabilities |
 
 Source basis: founder context supplied for this documentation task. No prior code implementation or completed release is implied.
+
+### Foundation implementation record
+
+| ID | Date | Status | Context | Selected option | Consequences |
+| --- | --- | --- | --- | --- | --- |
+| D11a | October 8, 2026 | accepted | The founder requested setup on the current Next.js release. | Next.js 16.4.0 with React 19.3.0, TypeScript, and ESLint. | The repository has a runnable frontend foundation. This does not select storage, authentication, maps, hosting, or any product policy. |
 
 ## 5. Architecture guidance
 

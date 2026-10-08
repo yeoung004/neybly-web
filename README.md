@@ -8,7 +8,7 @@ The central promise is **local participation and clearer expectations**. Proximi
 
 ## Project status
 
-As of October 7, 2026, this repository is in the **product-definition stage**. Before this documentation update, it contained only a title-only README and a Next.js-oriented `.gitignore`. There is no application, dependency manifest, backend, test suite, or verified deployment in this repository. Ignore-file entries do not establish an approved technology stack.
+As of October 8, 2026, this repository has a minimal **Next.js 16.4.0 / React 19.3.0** application skeleton. It provides the project tooling and an English placeholder home page only; no product workflows, backend, test suite, or deployment are implemented.
 
 All features described below are planned unless future implementation evidence says otherwise.
 
@@ -36,7 +36,14 @@ Do not expand this into a nationwide shipping marketplace, auction platform, or 
 
 ## Development
 
-There are no install, development, build, or test commands yet. Do not invent them. After a stack is approved and implemented, replace this section with commands verified against the actual dependency manifest and environment.
+Use Node.js 20.9 or later.
+
+```bash
+npm install
+npm run dev
+```
+
+Other available commands are `npm run lint`, `npm run typecheck`, `npm run build`, and `npm run start` (after a production build).
 
 ## Documentation conventions
 
